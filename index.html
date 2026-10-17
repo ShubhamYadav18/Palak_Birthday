@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Happy 18th Birthday Palak Yadav — a special celebration." />
+  <title>Happy Birthday, Palak ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <canvas id="petal-canvas"></canvas>
+  <div class="orbs">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <!-- ──────────────── MAIN PAGE ──────────────── -->
+  <main id="page">
+
+    <header class="site-header">
+      <div class="header-line"></div>
+      <span class="header-label">✦ 17 October 2026 ✦</span>
+      <div class="header-line"></div>
+    </header>
+
+    <section class="hero">
+
+      <div class="hero-left">
+        <p class="pre-title" id="pre-title">She turned</p>
+
+        <div class="age-display">
+          <span class="age-number" id="age-num">18</span>
+          <div class="age-flourish">
+            <span class="flourish-line"></span>
+            <i class="fa-solid fa-diamond age-diamond"></i>
+            <span class="flourish-line"></span>
+          </div>
+        </div>
+
+        <h1 class="main-title">
+          <span class="title-line" id="tl1">Happy</span>
+          <span class="title-line italic" id="tl2">Birthday,</span>
+          <span class="title-line name-line" id="tl3">Palak.</span>
+        </h1>
+
+        <p class="subtitle" id="subtitle">
+          Today you step into a whole new chapter — and trust me, it's going to be amazing.
+        </p>
+
+        <div class="cta-row">
+          <button class="open-btn" id="open-btn">
+            <span>Open your gift</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait-frame">
+          <div class="frame-border"></div>
+          <div class="portrait-inner">
+            <img
+              src="./images/WhatsApp Image 2026-10-17 at 16.16.41.jpeg"
+              alt="Palak Yadav"
+              class="portrait-img"
+            />
+            <div class="portrait-overlay"></div>
+          </div>
+          <div class="frame-tag">
+            <i class="fa-solid fa-star-of-life"></i>
+            <span>Palak Yadav</span>
+            <i class="fa-solid fa-star-of-life"></i>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-line"></div>
+      <span class="footer-label">Warmest wishes on your 18th birthday</span>
+      <div class="footer-line"></div>
+    </footer>
+
+  </main>
+
+  <!-- ──────────────── MODAL ──────────────── -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+
+      <button class="modal-close" id="modal-close" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal top -->
+      <div class="modal-top">
+        <p class="modal-eyebrow">✦ A Birthday Gift ✦</p>
+        <h2 class="modal-heading">For the girl who deserves everything.</h2>
+      </div>
+
+      <!-- ── Slider ── -->
+      <div class="slider-wrap">
+        <div class="slider" id="slider">
+          <div class="slide active" data-i="0">
+            <img src="./images/WhatsApp Image 2026-10-17 at 16.16.40 (1).jpeg" alt="Palak" />
+            <div class="slide-caption">Always the most graceful in the room 💜</div>
+          </div>
+          <div class="slide" data-i="1">
+            <img src="./images/WhatsApp Image 2026-10-17 at 16.16.41 (1).jpeg" alt="Palak" />
+            <div class="slide-caption">That smile could light up any place ✨</div>
+          </div>
+          <div class="slide" data-i="2">
+            <img src="./images/WhatsApp Image 2026-10-17 at 16.16.40.jpeg" alt="Palak" />
+            <div class="slide-caption">Calm, confident, and completely herself 🌸</div>
+          </div>
+          <div class="slide" data-i="3">
+            <img src="./images/WhatsApp Image 2026-10-17 at 16.16.41.jpeg" alt="Palak" />
+            <div class="slide-caption">Joy looks absolutely stunning on you ☀️</div>
+          </div>
+          <div class="slide" data-i="4">
+            <img src="./images/WhatsApp Image 2026-10-17 at 16.16.40 (2).jpeg" alt="Palak" />
+            <div class="slide-caption">18 & just getting started 🚀</div>
+          </div>
+        </div>
+
+        <button class="s-arrow s-prev" id="s-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="s-arrow s-next" id="s-next"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="s-dots" id="s-dots">
+          <span class="s-dot active" data-i="0"></span>
+          <span class="s-dot" data-i="1"></span>
+          <span class="s-dot" data-i="2"></span>
+          <span class="s-dot" data-i="3"></span>
+          <span class="s-dot" data-i="4"></span>
+        </div>
+        <div class="s-counter" id="s-counter">1 / 5</div>
+      </div>
+
+      <!-- ── Thumbnail Strip ── -->
+      <div class="thumb-strip" id="thumb-strip">
+        <div class="thumb active-thumb" data-i="0">
+          <img src="./images/WhatsApp Image 2026-10-17 at 16.16.40 (1).jpeg" alt="" />
+        </div>
+        <div class="thumb" data-i="1">
+          <img src="./images/WhatsApp Image 2026-10-17 at 16.16.41 (1).jpeg" alt="" />
+        </div>
+        <div class="thumb" data-i="2">
+          <img src="./images/WhatsApp Image 2026-10-17 at 16.16.40.jpeg" alt="" />
+        </div>
+        <div class="thumb" data-i="3">
+          <img src="./images/WhatsApp Image 2026-10-17 at 16.16.41.jpeg" alt="" />
+        </div>
+        <div class="thumb" data-i="4">
+          <img src="./images/WhatsApp Image 2026-10-17 at 16.16.40 (2).jpeg" alt="" />
+        </div>
+      </div>
+
+      <!-- ── Card Trigger Button ── -->
+      <div class="card-cta">
+        <div class="card-cta-rule">
+          <span class="rule-line"></span>
+          <i class="fa-solid fa-diamond rule-diamond"></i>
+          <span class="rule-line"></span>
+        </div>
+        <p class="card-cta-hint">I wrote you something special ✨</p>
+        <button class="card-open-btn" id="card-open-btn">
+          <i class="fa-solid fa-book-open"></i>
+          <span>Open Birthday Card</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <img class="lb-img" id="lb-img" src="" alt="Palak" />
+    <button class="lb-close" id="lb-close"><i class="fa-solid fa-xmark"></i></button>
+  </div>
+
+  <!-- ──────────── BOOKLET OVERLAY ──────────── -->
+  <div class="booklet-overlay" id="booklet-overlay">
+    <button class="booklet-close" id="booklet-close" aria-label="Close booklet">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="booklet" id="booklet">
+
+      <!-- LEFT PAGE — cover -->
+      <div class="book-page book-left">
+        <div class="book-left-deco-ring r1"></div>
+        <div class="book-left-deco-ring r2"></div>
+        <div class="book-left-inner">
+
+          <!-- Selfie as the hero image -->
+          <div class="book-selfie-wrap">
+            <img src="./images/me with palak.jpeg" alt="Us" class="book-selfie-img" />
+            <div class="book-selfie-overlay"></div>
+          </div>
+
+          <p class="book-to-label">To: Palak 💜</p>
+          <h2 class="book-hb-title">Happy<br/>Birthday</h2>
+          <div class="book-age-badge">✦ 18 ✦</div>
+          <p class="book-left-sub">17 October 2026</p>
+        </div>
+      </div>
+
+      <!-- SPINE -->
+      <div class="book-spine">
+        <div class="spine-line"></div>
+        <div class="spine-line"></div>
+      </div>
+
+      <!-- RIGHT PAGE — message (scrolls independently) -->
+      <div class="book-page book-right" id="book-right-page">
+        <div class="book-right-inner">
+          <p class="book-msg-eyebrow">✦ &nbsp; A note from your genuine well-wisher &nbsp; ✦</p>
+          <h3 class="book-msg-heading">Happy 18th!</h3>
+          <div class="book-lines">
+            <p class="book-msg" id="book-msg"></p>
+          </div>
+          <!-- scroll hint -->
+          <div class="scroll-hint" id="scroll-hint">
+            <i class="fa-solid fa-chevron-down"></i>
+            <span>scroll to read</span>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.booklet -->
+  </div><!-- /.booklet-overlay -->
+
+  <script src="script.js"></script>
+</body>
+</html>
